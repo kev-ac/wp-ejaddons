@@ -17,8 +17,9 @@ jobs:
         filename: 'release.zip'
         exclusions: '*.git*'
   
-    - name: Push artifact to release
-      uses: actions/upload-artifact@v2
+    - name: Release
+      uses: softprops/action-gh-release@v1
       with:
-        name: release
-        path: release.zip
+        files: release.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
