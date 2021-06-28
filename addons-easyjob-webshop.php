@@ -3,9 +3,9 @@
 /**
 
  * @wordpress-plugin
- * Plugin Name:       Easyjob Webshop Addons
+ * Plugin Name:       Addons für Easyjob Webshop
  * Description:       Addons für das Easyjob Webshop Plugin.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Kevin T.
  * Author URI:        https://github.com/kev-ac/wp-ejaddons
  * Text Domain:       ejaddons
@@ -20,6 +20,7 @@
 if ( ! defined( 'WPINC' ) ) {
     die;
 }
+
 
 require_once 'autoload.php';
 
